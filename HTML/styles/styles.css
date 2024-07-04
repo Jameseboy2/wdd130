@@ -1,6 +1,8 @@
-header, footer {
+header, footer, .grid{
     max-width: 840px;
     margin: 0 auto;
+    display: grid;
+    align-items: center;
 }
 
 nav {
@@ -91,9 +93,4 @@ footer {
     padding: 1rem;
     background-color: #ddd;
     color: #000;
-}
-
-.grid {
-    display: grid;
-    align-items: center;
 }
