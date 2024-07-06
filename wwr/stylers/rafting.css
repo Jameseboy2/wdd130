@@ -6,15 +6,15 @@
     --secondary-color: #FFA500;
     --accent1-color: #FFFFFF;
     --accent2-color: #000000;
-
+    
     --heading-font: 'Black Han Sans', serif;
     --paragraph-font: 'Roboto', serif;
-
+    
     --nav-background-color: #FFA500;
     --nav-link-color: #0000FF;
     --nav-hover-link-color: #FFA500;
-    --nav-hover-background-color: #0000FF;
-
+    --nav-hover-background-color: #00b7ff;
+    
     --body-font-color: #000000;
     --header-font-color: #000000;
 }
@@ -26,7 +26,20 @@ header a {
 }
 
 header img {
-    width: 500px;
+    width: px;
+    height: auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    background-color: #FFA500;
+    padding: 10px;
+}
+
+img {
+    width: 240px;
     height: auto;
 }
 
@@ -39,7 +52,7 @@ body {
 }
 
 h1{
-    position: absolute;
+    position: relative;
     top: 20px;
     left: 20px;
     z-index: 10;
@@ -48,6 +61,25 @@ h1{
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color)''
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+nav a {
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    background-color: #00b7ff;
+    border-radius: 5px;
 }
 
 article {
@@ -60,6 +92,19 @@ article {
     float: right;
 }
 
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFA500;
+    padding: 10px;
+}
 
 footer a {
     text-decoration: none;
@@ -75,8 +120,24 @@ footer nav.sociallinks a img {
     height: auto;
 }
 
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
+.hero, .history, .adventure {
+    border: 1px solid black;
+    margin: 20px 0;
+    padding: 20px;
+    display: flex;
+    grid-template-rows: auto;
+    flex-direction: column;
+    align-items: center
+}
+
+.hero-content, .history-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
