@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="A page with a bunch of ways to contact us">
+        <meta name="author" content ="James Taylor">
+        <title>About Us | Jay's Rafting</title>
+        <link rel="stylesheet" href="stylers/rafting.css">
+    </head>
+    <body>
+        <header>
+            <img src="images/logo.png" alt="Rafting Logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+        <main>
+            <section class="company-info">
+                <h2>Company Information</h2>
+                <address>
+                    <p>123 River Road</p>
+                    <p>Rocky Mountains, ID 83646</p>
+                </address>
+                <p>Phone: +1 (555) 123-4567</p>
+                <p>Email: <a href="mailto:info@jaysrafting.com">info@jaysrafting.com</a></p>
+                <div>
+                    <h2>Find us on the Map!</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32804.24385269646!2d-111.28212871489242!3d43.3872078486945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5353ab66ebd1785d%3A0x51d0a39c77375f60!2sRocky%20Mountains!5e0!3m2!1sen!2sus!4v1720913565115!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+            <section class="company-owners">
+                <h2>Meet Our Team</h2>
+                <div class="owner">
+                    <img src="images/owner1.webp" alt="Owner 1">
+                    <p><strong>James (not) Taylor</strong><br>Founder & CEO</p>
+                </div>
+                <div class="owner">
+                    <img src="images/owner2.jpg" alt="Owner 2">
+                    <p><strong>Linda Johnson</strong><br>COO</p>
+                </div>
+                <div class="owner">
+                    <img src="images/owner3.webp" alt="Owner 3">
+                    <p><strong>Michael Brown</strong><br>CTO</p>
+                </div>
+            </section>
+            <section class="contact">
+                <h2>Contact Us</h2>
+                <div class="contact-content">
+                    <p>Swing by for a cup of sugar, or leave us a message:</p>
+                    <form action="/action_page.php" method="post">
+                        <div>
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                        </div>
+                        <div>
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                        </div>
+                        <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email address.." required>
+                        </div>
+                        <label for="purpose">Purpose of Message</label>
+                        <div class="radio-options">
+                            <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                            <label for="general">General Inquiry</label>
+                            <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                            <label for="reservation">Reservation Question</label>
+                            <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                            <label for="suggestion">Website Suggestion</label>
+                        </div>
+                        <textarea id="message" name="message" placeholder="Write your message here..." rows="3" required></textarea>
+                        <div>
+                            <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                            <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                        </div>
+                            <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>©2024 James Taylor | Jay's Rapid River Rafting</p>
+            <nav class="sociallinks">
+                <a href="https://facebook.com">
+                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaWQ9IkxheWVyXzEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDEwMDAgMTAwMDsiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDEwMDAgMTAwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojM0I1NzlEO30KCS5zdDF7ZmlsbDojRkZGRkZGO30KPC9zdHlsZT48dGl0bGUvPjxnPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik01MDAsMTAwMEw1MDAsMTAwMEMyMjMuOSwxMDAwLDAsNzc2LjEsMCw1MDB2MEMwLDIyMy45LDIyMy45LDAsNTAwLDBoMGMyNzYuMSwwLDUwMCwyMjMuOSw1MDAsNTAwdjAgICBDMTAwMCw3NzYuMSw3NzYuMSwxMDAwLDUwMCwxMDAweiIvPjxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik02MzAsMTAwMFY2MTIuN2gxMzBsMTkuNS0xNTAuOUg2MzB2LTk2LjRjMC00My43LDEyLjEtNzMuNSw3NC44LTczLjVsNzkuOSwwVjE1NyAgIGMtMTMuOC0xLjgtNjEuMy01LjktMTE2LjUtNS45Yy0xMTUuMiwwLTE5NC4xLDcwLjMtMTk0LjEsMTk5LjV2MTExLjNIMzQzLjh2MTUwLjloMTMwLjNWMTAwMEg2MzB6IiBpZD0iZiIvPjwvZz48L3N2Zz4=" alt="Facebook">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTIwMCIgaGVpZ2h0PSIxMjI3IiB2aWV3Qm94PSIwIDAgMTIwMCAxMjI3IiBmaWxsPSJub25lIj48ZyBjbGlwLXBhdGg9InVybCgjY2xpcDBfMV8yKSI+PHBhdGggZD0iTTcxNC4xNjMgNTE5LjI4NEwxMTYwLjg5IDBIMTA1NS4wM0w2NjcuMTM3IDQ1MC44ODdMMzU3LjMyOCAwSDBMNDY4LjQ5MiA2ODEuODIxTDAgMTIyNi4zN0gxMDUuODY2TDUxNS40OTEgNzUwLjIxOEw4NDIuNjcyIDEyMjYuMzdIMTIwMEw3MTQuMTM3IDUxOS4yODRINzE0LjE2M1pNNTY5LjE2NSA2ODcuODI4TDUyMS42OTcgNjE5LjkzNEwxNDQuMDExIDc5LjY5NDRIMzA2LjYxNUw2MTEuNDEyIDUxNS42ODVMNjU4Ljg4IDU4My41NzlMMTA1NS4wOCAxMTUwLjNIODkyLjQ3Nkw1NjkuMTY1IDY4Ny44NTRWNjg3LjgyOFoiIGZpbGw9ImJsYWNrIi8+PC9nPjxkZWZzPjxjbGlwUGF0aCBpZD0iY2xpcDBfMV8yIj48cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSIxMjI3IiBmaWxsPSJ3aGl0ZSIvPjwvY2xpcFBhdGg+PC9kZWZzPjwvc3ZnPg==" alt="Twitter">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaWQ9IkFwcGxlIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOnVybCgjTmVwb2ptZW5vdmFuw71fcMWZZWNob2RfMjcpO30uY2xzLTJ7ZmlsbDojZmZmO308L3N0eWxlPjxsaW5lYXJHcmFkaWVudCBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgaWQ9Ik5lcG9qbWVub3ZhbsO9X3DFmWVjaG9kXzI3IiB4MT0iMzI4LjI3IiB4Mj0iMTgzLjczIiB5MT0iNTA4LjA1IiB5Mj0iMy45NSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZkYjczIi8+PHN0b3Agb2Zmc2V0PSIwLjA4IiBzdG9wLWNvbG9yPSIjZmRhZDRlIi8+PHN0b3Agb2Zmc2V0PSIwLjE1IiBzdG9wLWNvbG9yPSIjZmI4MzJlIi8+PHN0b3Agb2Zmc2V0PSIwLjE5IiBzdG9wLWNvbG9yPSIjZmE3MzIxIi8+PHN0b3Agb2Zmc2V0PSIwLjIzIiBzdG9wLWNvbG9yPSIjZjY2OTJmIi8+PHN0b3Agb2Zmc2V0PSIwLjM3IiBzdG9wLWNvbG9yPSIjZTg0YTVhIi8+PHN0b3Agb2Zmc2V0PSIwLjQ4IiBzdG9wLWNvbG9yPSIjZTAzNjc1Ii8+PHN0b3Agb2Zmc2V0PSIwLjU1IiBzdG9wLWNvbG9yPSIjZGQyZjdmIi8+PHN0b3Agb2Zmc2V0PSIwLjY4IiBzdG9wLWNvbG9yPSIjYjQzZDk3Ii8+PHN0b3Agb2Zmc2V0PSIwLjk3IiBzdG9wLWNvbG9yPSIjNGQ2MGQ0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNDI2NGRiIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHRpdGxlLz48cmVjdCBjbGFzcz0iY2xzLTEiIGhlaWdodD0iNDY1LjA2IiByeD0iMTA3LjIzIiByeT0iMTA3LjIzIiB3aWR0aD0iNDY1LjA2IiB4PSIyMy40NyIgeT0iMjMuNDciLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zMzEsMTE1LjIyYTY2LjkyLDY2LjkyLDAsMCwxLDY2LjY1LDY2LjY1VjMzMC4xM0E2Ni45Miw2Ni45MiwwLDAsMSwzMzEsMzk2Ljc4SDE4MWE2Ni45Miw2Ni45MiwwLDAsMS02Ni42NS02Ni42NVYxODEuODdBNjYuOTIsNjYuOTIsMCwwLDEsMTgxLDExNS4yMkgzMzFtMC0zMUgxODFjLTUzLjcxLDAtOTcuNjYsNDQtOTcuNjYsOTcuNjZWMzMwLjEzYzAsNTMuNzEsNDQsOTcuNjYsOTcuNjYsOTcuNjZIMzMxYzUzLjcxLDAsOTcuNjYtNDQsOTcuNjYtOTcuNjZWMTgxLjg3YzAtNTMuNzEtNDMuOTUtOTcuNjYtOTcuNjYtOTcuNjZaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMjU2LDE5OC4xM0E1Ny44Nyw1Ny44NywwLDEsMSwxOTguMTMsMjU2LDU3Ljk0LDU3Ljk0LDAsMCwxLDI1NiwxOTguMTNtMC0zMUE4OC44Nyw4OC44NywwLDEsMCwzNDQuODcsMjU2LDg4Ljg3LDg4Ljg3LDAsMCwwLDI1NiwxNjcuMTNaIi8+PGNpcmNsZSBjbGFzcz0iY2xzLTIiIGN4PSIzNDYuODEiIGN5PSIxNjMuMjMiIHI9IjIxLjA3Ii8+PC9zdmc+" alt="Instagram">
+                </a>
+            </nav>
+        </footer>
+    </body>
+</html>
