@@ -57,7 +57,12 @@ h1{
     z-index: 10;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
@@ -123,7 +128,6 @@ footer nav.sociallinks a img {
 }
 
 .hero {
-    background-image: url('wwr\images\background.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -139,7 +143,7 @@ footer nav.sociallinks a img {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.0);
     z-index: 1;
 }
 
